@@ -44,11 +44,34 @@
         </section>
         <section id="cuestionario">
             <h2>Cuestionario</h2>
-            <div class="respuesta">
+            <div id="menu-cuestionario">
+                <button onclick="mostrarPregunta('pregunta1')">1. ¿Qué es el Derecho?</button>
+                <button onclick="mostrarPregunta('pregunta2')">2. Ramas del Derecho</button>
+                <button onclick="mostrarPregunta('pregunta3')">3. ¿Qué es la Cibernética?</button>
+                <button onclick="mostrarPregunta('pregunta4')">4. Qué es la Informática</button>
+                <button onclick="mostrarPregunta('pregunta5')">5. Relación Derecho e Informática</button>
+                <button onclick="mostrarPregunta('pregunta6')">6. Cual es la clasificacion de la informatica juridica</button>
+                <button onclick="mostrarPregunta('pregunta7')">7. Derecho informático</button>
+                <button onclick="mostrarPregunta('pregunta8')">8. Que es un contrato electrónico</button>
+                <button onclick="mostrarPregunta('pregunta9')">9. Finalidad del contrato de confidencialidad</button>
+                <button onclick="mostrarPregunta('pregunta10')">10. En qué consiste la firma electrónica</button>
+                <button onclick="mostrarPregunta('pregunta11')">11. Cuál es la Ley que regula la firma electrónica en Guatemala</button>
+                <button onclick="mostrarPregunta('pregunta12')">12. Qué es la patente</button>
+                <button onclick="mostrarPregunta('pregunta13')">13. En qué consiste el habeas data</button>
+                <button onclick="mostrarPregunta('pregunta14')">14. Qué es el delito</button>
+                <button onclick="mostrarPregunta('pregunta15')">15. Cuáles son las clases de delito que existen</button>
+                <button onclick="mostrarPregunta('pregunta16')">16. Cuál es el bien jurídico tutelado de los delitos informáticos</button>
+                <button onclick="mostrarPregunta('pregunta17')">17. Qué es el bien jurídico tutelado</button>
+                <button onclick="mostrarPregunta('pregunta18')">18. Cuál es la finalidad de la acción penal</button>
+                <button onclick="mostrarPregunta('pregunta19')">19. Cuál es la finalidad de la acción civil</button>
+                <button onclick="mostrarPregunta('pregunta20')">20. Qué es el derecho de trabajo</button>
+                <button onclick="mostrarPregunta('pregunta21')">21. ¿En qué le será de utilidad el derecho de trabajo?</button>
+                <button onclick="mostrarPregunta('pregunta22')">22. En qué norma jurídica se encuentran tipificados los delitos informáticos</button>
+                <button onclick="mostrarPregunta('pregunta23')">23. Qué fue lo que más le llamó la atención del presente curso</button>
+            </div>
+            <div id="pregunta1" class="pregunta-contenido">
                 <strong>1.  ¿Qué es el Derecho?</strong><br>
                 <p>Buscar la definición más adecuada para el Derecho no es una tarea fácil.
-                Etimológicamente deriva del latín <em>directus</em>, p.p. de <em>dirigiere</em> que significa enderezar, 
-                alinear. Nos da idea de lo recto, igual, sin torcerse a ningún lado.</p>
                 <img src="https://i.ytimg.com/vi/OuQpq0T-ULY/maxresdefault.jpg" alt="Imagen de Derecho">
                 <p>El Derecho “es el conjunto de normas obligatorias que regulan la vida 
                 del hombre en la sociedad”. Como ciencia el Derecho posee un conjunto ordenado de principios y un método destinados 
@@ -58,20 +81,17 @@
                 personas entre sí, de las personas con los bienes, las relaciones comerciales y de trabajo, 
                 etcétera. "Que regulan la vida del hombre en la sociedad". Las nor- mas jurídicas 
                 tienen esa finalidad: regular, regir, dirigir, pautar las conductas.</p>
-                
                 <p>Cuando hablamos del Derecho nos referimos 
                 a una ciencia que como tal contiene y enuncia principios generales. Cuando nos referimos a los 
                 derechos se hace referencia a facultades acordadas o reconocidas. Así el derecho de propiedad, 
                 el derecho de expresión, el dere- cho a trabajar, se refieren a la facultad que la persona puede 
                 ejercitar para disponer de su patrimonio.</p>
-                Zajac, A. M. y Chaves, M. N. (2001). Derecho: (2 ed.). Ituzaingó, Editorial Maipue. 
-                Recuperado de https://elibro.net/es/ereader/umg/113111?page=12.
             </div>
-            <div class="respuesta">
+            <div id="pregunta2" class="pregunta-contenido" style="display:none;">
                 <strong>2.  Ramas del derecho</strong><br>
 
                 <br> <strong>Derecho publico</strong>
-                    El Derecho público ius publicum, es el conjunto de normas que regula las
+                    El Derecho público es el conjunto de normas que regula las
                     relaciones y funciones del Estado, y las relaciones de éste con los particulares. <br>
                     <br>Este derecho se clasifica de la siguiente forma: <br>
                     <br> <strong>Derecho Constirucional</strong><br>
@@ -144,7 +164,7 @@
                 que procura conducir el conflicto a través de canales regulares, pacíficos y justos.</p>
 
                 <br> <strong>Derecho Privado</strong> <br>
-                <p>El Derecho privado es el ius singulorum, es el conjunto de normas que regula las relaciones entre particulares,
+                <p>El Derecho privado es el conjunto de normas que regula las relaciones entre particulares,
                 se clasifican en: </p>
                 
                 <br> <strong>Derecho Civil</strong> <br>
@@ -175,34 +195,471 @@
                 que pueden surgir entre los distintos sistemas jurídicos, garantizando así la protección de los derechos de los 
                 ciudadanos en sus interacciones internacionales.
                 En el derecho internacional privado se plantean situaciones de derecho civil y derecho mercantil.</p>
-
-                <br> <strong>3. ¿Qué es la Cibernética?</strong> <br>
+            </div>
+            <div id="pregunta3" class="pregunta-contenido" style="display:none;">
+                <strong>3. ¿Qué es la Cibernética?</strong> <br>
                 <br> <strong>Definición y Origen</strong>
                 <p>La cibernética es el estudio interdisciplinario de la estructura de los sistemas reguladores.
-                En otras palabras, es la ciencia que estudia los flujos de energía estrechamente vinculados a la teoría de control y a la teoría de sistemas.</p>
-                La cibernética es una disciplina científica que estudia los sistemas de control y comunicación en seres vivos y máquinas, enfocándose en cómo interactúan y se regulan.
-                La cibernética fue acuñada por el matemático y filósofo Norbert Wiener en 1948. El término proviene del griego "kybernetes", que significa "timonel" o "gobernante", 
-                reflejando su enfoque en los procesos de control y comunicación. Esta disciplina busca entender cómo los sistemas, tanto naturales como 
-                artificiales, se comunican y se regulan entre sí. 
-                <br>  <strong>Principios Fundamentales</strong> <br>
-                La cibernética se centra en varios conceptos clave:
-                Control y Comunicación: Estudia cómo los sistemas se controlan y comunican, buscando patrones y regularidades en sus interacciones.
-                Retroalimentación: Un principio fundamental que permite a los sistemas ajustar su comportamiento en función de la información recibida sobre su rendimiento. 
-                Interdisciplinariedad: Combina ideas de diversas áreas como la biología, la ingeniería, la informática y la psicología para abordar problemas complejos. 
-                
+                <p>En otras palabras, es la ciencia que estudia los flujos de energía estrechamente vinculados 
+                a la teoría de  control y a la teoría de sistemas.</p>
+                La cibernética es una disciplina científica que estudia los sistemas de control y comunicación en seres vivos 
+                y máquinas, enfocándose en cómo interactúan y se regulan.
+                La cibernética fue acuñada por el matemático y filósofo Norbert Wiener en 1948. El término proviene del 
+                griego "kybernetes", que significa "timonel" o "gobernante", 
+                reflejando su enfoque en los procesos de control y comunicación. Esta disciplina busca entender cómo
+                los sistemas, tanto naturales como 
+                artificiales, se comunican y se regulan entre sí. </p>
+                <strong>Principios Fundamentales</strong> <br>
+                <p>La cibernética se centra en varios conceptos clave:
+                Control y Comunicación: Estudia cómo los sistemas se controlan y comunican, buscando patrones y regularidades 
+                en sus interacciones.
+                Retroalimentación: Un principio fundamental que permite a los sistemas ajustar su comportamiento en función 
+                de la información recibida sobre su rendimiento. 
+                Interdisciplinariedad: Combina ideas de diversas áreas como la biología, la ingeniería, la informática y 
+                la psicología para abordar problemas complejos.</p>
+            </div>
+            <div id="pregunta4" class="pregunta-contenido" style="display:none;">
                 <br> <strong>4. Qué es la Informática </strong>
                 <p><strong>Concepto de informática</strong> <br>
                 La informática proviene de información automática y sirve para designar el tra- tamiento y manejo de la
                 información por medio de las computadoras, segun Philipe Dreyfus, mediante la contracción de
                 información y automática. Es la ciencia del tratamiento automático o automatizado de la información,
-                primor- dialmente mediante las computadoras.
-                Característica y fin de Ia informática
+                primor- dialmente mediante las computadoras.</p>
+
+                <p> <strong>Característica y fin de Ia informática</strong> <br>
                 Es una ciencia que trata automática o automatizada a la información. Estudia los procesos que se ejercen
                 sobre datos e información como: generación, obten- ción, registro, depuración, concentración, filtrado,
                 ordenamiento, integración, cálculo, acceso, recuperación, visualización, interpretación, análisis, difusión
                 y como fin de la informática encontramos la elaboración de métodos y medios óptimos para
                 representación, recopilación, elaboración analítica-sintética, me- morización, busqueda y difusión de
                 informaciones científicas</p>
+            </div>
+            <div id="pregunta5" class="pregunta-contenido" style="display:none;">
+                <strong>Cual es la relacion que existe entre derecho e informatica</strong> <br>
+                <p>La unión de dos ciencias: la informática y el derecho El impacto de la tecnología trae como consecuencia
+                cambios sociales, así Stammler establece que dentro de las sociedades se producen modificaciones
+                sociológicas, que a su vez tendrán que alterar y transformar los sistemas vigentes del derecho.</p>
+                <p>Ahora bien, la informática y el
+                derecho se han relacionado porque en nuestro sistema jurídico existen leyes que ya hablan de esta unión,
+                como el Código Penal Federal para el D.F., la Ley de Derecho de Autor, la Ley del Mercado de Valores, el
+                Código de Comercio a partir del año 2003, la Ley Federal de Protección al Consumidor; ahora bien,
+                también la unión entre estas dos ciencias se lleva a cabo por la misma práctica cotidiana del uso de los
+                medios electrónicos, no se necesita ser abogado para determinar la postura de incumplimiento y su
+                solución legal, por ejemplo, de un contrato electrónico, de un delito electrónico o establecer el valor ante
+                el juez de un documento impreso, por lo que entonces los mismos particulares ya hacen esta unión por la
+                simple utilización de los medios electrónicos.</p>
+                <p>Así, la interrelación entre el derecho y la informática tiene
+                dos líneas de investigación fundamentales: la primera línea es la informática jurídica, donde el derecho
+                usa a la informática como herramienta, como un instrumento de apoyo, para el diseño de medios de
+                compilación y resguardo de información; es decir, un enfoque al aspecto netamente instrumental. La
+                segunda línea de investigación es el derecho de la informática, en donde el derecho toma como objeto de
+                estudio a la informática, esto es que de aquí se integra un marco regulador de sus actividades, porque se
+                considera a la informática como objeto del derecho</p>
+            </div>
+            <div id="pregunta6" class="pregunta-contenido" style="display:none;">
+                <strong>Cual es la clasificacion de la informactica juridica</strong> <br>
+                <p><strong>CLASIFICACIÓN DE LA INFORMÁTICA JURÍDICA</strong></p>
+            
+            <p>La informática jurídica estudia el tratamiento automatizado de:
+
+            ·Las fuentes del conocimiento jurídico a través de los sistemas de documentación legislativa, jurisprudencial y 
+            doctrinal (Informática jurídica documental).
+
+            ·Las fuentes de producción jurídica, a través de la elaboración informática de los factores lógico-formales 
+            que concurren en el proceso legislativo y en la decisión judicial (Informática jurídica decisional).
+
+            ·Los procesos de organización de la infraestructura o medios instrumentales con los que se gestiona el Derecho (Informática jurídica de gestión).</p>
+
+            <strong>INFORMÁTICA JURÍDICA DOCUMENTAL</strong>
+
+            <p>De esta rama se desprende el análisis de la información contenida en documentos jurídicos para la formación de 
+            Bancos de datos documentales. Como norma de la informática jurídica consiste en la aplicación de técnicas 
+            informáticas a la documentación jurídica en los aspectos sobre el análisis, archivo, y recuperación de 
+            información contenida en la legislación, jurisprudencia, doctrina o cualquier otro documento con contenido 
+            jurídico relevante. Además de otras áreas, comprende la aplicación de técnicas documentales, entendida la 
+            documentación como el acto de reunir datos sobre un tema dado y el tratamiento de estos en vistas a su definición.</p>
+
+            <strong>INFORMÁTICA JURÍDICA DE GESTIÓN</strong>
+
+            <P>Esta rama de la informática jurídica está encaminada a organizar y controlar la información jurídica de documentos, 
+            expedientes, libros, etc., ya sea mediante la aplicación de programas de administración que permitan crear 
+            identificadores y descriptores para la clasificación de dicha información. Este tipo de informática es 
+            conocida como de administración y/o control, es utilizada en tribunales, estudios jurídicos, notarías, 
+            entre otras; se utiliza sobre todo para llevar el seguimiento de trámites y procesos con el objeto de 
+            mantener actualizada la información y llevar un buen control de la misma.
+
+            Clasificaciones
+
+            Registral: esta se ocupa de todos los tipos de registros, sean públicos o privados. Se trata de facilitar a
+            los distintos usuarios datos fehacientes en todos los registros oficiales, con rapidez y facilidad de acceso.
+            Operacional: trata de facilitar la actuación y funcionamiento de las oficinas relacionadas con el Derecho, 
+            tanto a nivel público como privado, en las que va a permitir que la máquina lleve toda la actuación repetitiva y 
+            el control de asuntos. Decisional: es la utilización de modelos predefinidos para la adecuada solución de casos específicos y concretos, 
+            como por ejemplo: el rechazo de un recurso procesal extemporáneo.</P>
+
+            <strong>INFORMÁTICA JURÍDICA DECISIONAL</strong>
+
+            <p>Esta rama se caracteriza por conformarse por bases del conocimiento jurídico. Abarca una gran variedad 
+                de esfuerzos y proyectos que intentan obtener de las aplicaciones de la informática al Derecho, resultados 
+                que vayan más allá de la recuperación de información, con la pretensión de que la máquina resuelva por sí 
+                misma problemas jurídicos, o al menos auxilie a hacerlo y constituya al avance de la teoría jurídica.
+
+            Clasificaciones
+
+            Sistemas expertos legales: son la estructuración de conocimientos especializados que, acoplados al mecanismo 
+            de inferencia, saca conclusiones a partir de la información que se le suministra en forma de preguntas o respuestas. 
+            Estos sistemas expertos pueden realizar operaciones lógicas sobre los elementos que lo integran, además de razonamientos, e
+            n virtud de contar con una base de datos estructurada. Se trata en definitiva de sistemas aptos para tomar dos o más 
+            informaciones para la base de conocimiento, y producir a partir de ellos, una conclusión lógica, cuyo resultado no previó 
+            el experto, sino que es adoptado por el propio sistema (inteligencia artificial).</p>
+
+
+            <strong>Sistema de enseñanza del Derecho asistido por computadora:</strong> 
+            <p>Rama que tiene interacción directa con las materias de pedagogía del Derecho, Psicología educativa, lingüística y 
+            comunicación, cuya finalidad es crear sistemas de enseñanza, cuyo soporte de realización se aplica, en primera parte; 
+            en segundo lugar, las bases de conocimiento para representar, organizar, analizar y estructurar la información jurídica; y
+            por último, la evaluación formativa del proceso, enseñanza o aprendizaje previsto en el sistema.</p>
+            </div>
+            <div id="pregunta7" class="pregunta-contenido" style="display: none;">
+            <strong>Indique que es para usted el derecho informático</strong>
+            <p>El derecho informático es una rama del derecho que se encarga de regular los efectos jurídicos 
+            derivados del uso de las tecnologías de la información y la comunicación (TIC). Es decir, es el conjunto de 
+            normas, principios y leyes que regulan las actividades humanas relacionadas con la informática, como:
+
+            <ul>
+                <li>El uso de computadoras y redes.</li>
+                <li>La protección de datos personales.</li>
+                <li>Los delitos informáticos (como el hacking o el fraude digital).</li>
+                <li>La propiedad intelectual en entornos digitales.</li>
+                <li>Los contratos electrónicos y el comercio en línea.</li>
+            </ul>
+
+            Este campo ha cobrado gran importancia en las últimas décadas debido al avance tecnológico y la 
+            creciente dependencia de 
+            los sistemas informáticos en todas las áreas de la vida: desde la administración pública hasta el comercio, 
+            la educación 
+            y la vida personal.
+            </p>
+            </div>
+            <div id="pregunta8" class="pregunta-contenido" style="display: none;">
+            <strong>Que es un contrato electrónico</strong>
+            <p>Se deduce que se ha reservado la expresión «contrato electrónico» para referirse a aquel conjunto de contratos para cuya conclusión se emplean medios o procedimientos electrónicos. Pese a la aparente claridad de la definición, ha de hacerse referencia al menos a tres cuestiones respecto al calificativo «electrónico» aplicado a un contrato. En primer lugar, cabría plantearse si cuando se habla de «procedimientos informáticos» sería lo mismo que decir medios o «procedimientos electrónicos». La segunda de las cuestiones es la de si cabe ofrecer otra acepción del significado de la expresión, de acuerdo con la cual por «contrato electrónico» se haría referencia al «contrato propio del comercio electrónico». Es decir, sencillamente se trataría de poner en relación todo lo analizado hasta el momento en otros epígrafes acerca del concepto y extensión del «comercio electrónico», para concluir afirmando que cuando se contrate en el ámbito de dicho comercio se dará nacimiento a un contrato electronico.</p>
+            <p>El concepto de «contrato electrónico» se vincula con aquellos acuerdos establecidos mediante procedimientos electrónicos. Existen diversas interpretaciones sobre su definición, incluyendo la posibilidad de que se refiera específicamente a los contratos dentro del comercio electrónico. También se plantea si los «procedimientos informáticos» son equivalentes a los «procedimientos electrónicos». En cualquier caso, su aplicación está estrechamente relacionada con la evolución digital en la contratación.</p>
+
+            </div>
+            <div id="pregunta9" class="pregunta-contenido" style="display: none;">
+                <strong>Indique cual es la finalidad del contrato de confidencialidad</strong>
+                <p>La finalidad del contrato de confidencialidad es proteger información confidencial o sensible que una o ambas partes desean mantener en secreto durante una relación comercial, laboral o de colaboración.</p>
+                <p>En algunos códigos deontológicos el deber de confidencialidad 
+276 
+El derecho y las nuevas tecnologías: codigos deontológicos y autoregulación 
+aparece vinculado con la idea del honor, al entender que los sujetos han hecho 
+una promesa (explícita o implícita) que les obliga a guardar el secreto de la 
+información privada de la que puedan tener conocimiento. </p>
+<p> <strong>Confidencialidad</strong> que la 
+transacción sólo sea conocida por las partes intervinientes (en el caso de las 
+tarjetas de crédito: prestador del servicio, cliente y banco). </p>
+            </div>
+            <div id="pregunta10" class="pregunta-contenido" style="display:none;">
+                <strong>Explique en qué consiste la firma electrónica</strong>
+                <p>La firma electrónica esta ligada a la autenticación de
+individuos en internet, y es importante en las áreas de
+jurisdicción, ciberdelincuencia y comercio exterior.
+
+Facilitar las transacciones de comercio electrónico,
+mediante la celebración de contratos electrónicos.
+La firma electrónica es un conjunto de datos electrónicos asociados a un documento digital que permiten identificar al firmante y expresar su consentimiento o aprobación sobre el contenido del mismo. Tiene la misma validez legal que una firma manuscrita, siempre que cumpla con ciertos requisitos establecidos por la ley de cada país.
+
+<strong>¿En qué consiste?</strong>
+Consiste en un método digital que utiliza herramientas tecnológicas para firmar documentos de manera segura, rápida y a distancia. Puede presentarse de diferentes formas, como:
+
+Un nombre escrito al final de un correo electrónico.
+
+Una imagen escaneada de una firma manuscrita.
+
+Un código PIN o contraseña.
+
+Un certificado digital emitido por una autoridad certificadora.
+</p>
+            </div>
+            <div id="pregunta11" class="pregunta-contenido" style="display:none;">
+                <strong>Indique cuál es la Ley que regula la firma electrónica en Guatemala</strong>
+                <p>En Guatemala, la firma electrónica está regulada por la Ley para el Reconocimiento de las Comunicaciones y Firmas Electrónicas, establecida mediante el Decreto Número 47-2008 del Congreso de la República. Esta ley fue publicada en el Diario Oficial el 23 de septiembre de 2008 y tiene como objetivo principal otorgar validez jurídica a las comunicaciones y firmas electrónicas, equiparándolas a las tradicionales en papel y manuscritas. </p>
+                <p>Reglamentación Complementaria
+Para la implementación efectiva de esta ley, se han emitido diversos acuerdos gubernativos que detallan su aplicación:
+Viafirma
+
+Acuerdo Gubernativo No. 135-2009: Reglamento de la Ley para el Reconocimiento de las Comunicaciones y Firmas Electrónicas. 
+RPSC
++1
+Viafirma
++1
+
+Acuerdo Gubernativo No. 262-2009: Reformas al reglamento mencionado anteriormente. 
+Viafirma
++1
+RPSC
++1
+
+Acuerdo Gubernativo No. 110-2020: Reformas adicionales al reglamento para adaptarse a nuevas necesidades tecnológicas y legales.
+
+Además, el Ministerio de Economía es la entidad encargada de regular y supervisar el uso de la firma electrónica en el país, incluyendo la autorización y registro de los Prestadores de Servicios de Certificación.</p>
+            </div>
+            <div id="pregunta12" class="pregunta-contenido" style="display:none;">
+                <strong>Explique qué es la patente</strong>
+                <p>Una patente es un derecho otorgado por el Estado (u otra autoridad pertinente) a un inventor de modo que este sea el único autorizado para explotar y obtener ganancias de su invención durante un período de tiempo limitado.
+Una patente es un derecho exclusivo que se otorga al creador o inventor de un cierto producto o servicio. Este derecho le permite fabricar y comercializar su invento de manera exclusiva, pudiendo demandar a cualquier otra persona u organización que intente copiar su invento.
+La duración de la patente es limitada y a su vencimiento el inventor debe revelar los secretos de su invención (composición, estructura, etc.) de modo que todas las personas que estén interesadas puedan copiarlo y comercializarlo.</p>
+
+Patente
+Redactado por: Paula Nicole Roldán
+Una patente es un derecho otorgado por el Estado (u otra autoridad pertinente) a un inventor de modo que este sea el único autorizado para explotar y obtener ganancias de su invención durante un período de tiempo limitado.
+
+Una patente es un derecho exclusivo que se otorga al creador o inventor de un cierto producto o servicio. Este derecho le permite fabricar y comercializar su invento de manera exclusiva, pudiendo demandar a cualquier otra persona u organización que intente copiar su invento.
+La duración de la patente es limitada y a su vencimiento el inventor debe revelar los secretos de su invención (composición, estructura, etc.) de modo que todas las personas que estén interesadas puedan copiarlo y comercializarlo.
+<br><br><strong>Características de una patente</strong>
+Las patentes tienen las siguientes características básicas:
+
+Se tratan de un derecho exclusivo
+Tienen duración limitada, su duración depende del producto o servicio patentado. Usualmente no superan los 20 años.
+Las otorga el Estado, generalmente a través de un organismo público especialmente dedicado al registro de patentes, marcas y protección de la propiedad intelectual e industrial.
+La patente genera un monopolio que favorece al inventor o creador del producto o servicio.
+            </div>
+            <div id="pregunta13" class="pregunta-contenido" style="display:none;">
+                <strong>Explique en qué consiste el habeas data</strong>
+                <p>Habeas data es el derecho que tiene toda persona de conocer, corregir o actualizar toda aquella información que se relacione con ella. Incluso aquella almacenada en centrales de información o bases de datos de organismos tanto públicos como privados.
+
+La expresión habeas data, como tal, proviene del latín y significa ‘tener datos presentes’.
+
+El habeas data es un recurso que cualquier persona puede interponer con el fin de acceder a los datos que existan sobre su persona. Conocer la manera en que han sido adquiridos y cómo están siendo utilizados por el organismo que los posee.
+
+Además, la persona también puede exigir su supresión, corrección, confidencialidad o actualización, en caso de que la información presentada sea falsa, errónea, o esté desactualizada.
+
+El habeas data es una garantía constitucional que protege a las personas contra el uso abusivo de información personal, sobre todo cuando esta ha sido obtenida de forma ilícita o fraudulenta.</p>
+
+<p>En este sentido, el habeas data también garantiza a los ciudadanos la preservación de su intimidad, privacidad y honra.
+
+Estos son algunos ejemplos de situaciones en las que una persona busca ejercer su derecho:
+
+Una persona que nunca ha tenido una deuda, se encuentra incorrectamente listada en un buró de crédito como deudora. Así que interpone un habeas data ante la institución con la finalidad de que su nombre sea removido.
+Un individuo solicita acceder a la información que una empresa recopila sobre él, como datos de clientes, historial de compras o perfiles en línea.
+Una persona solicita que se eliminen datos personales almacenados por una entidad pública o privada que ya no son relevantes o necesarios.
+La eliminación de datos de motores de búsqueda o redes sociales, en virtud del derecho de habeas data.
+Acceder a nuestro historial médico para revisar la información contenida en él o compartirlo con otros profesionales de la salud.</p>
+            </div>
+            <div id="pregunta14" class="pregunta-contenido" style="display:none;">
+                <strong>Indique qué es el delito</strong>
+                <p>Cuando hablamos de un delito o un crimen, hacemos alusión a una conducta social que violenta los códigos de convivencia y legalidad establecidos en la Ley, y que por lo tanto se considera un hecho culpable, imputable, típico y antijurídico, es decir, una acción u omisión contraria a las leyes por las que elegimos regirnos y que por ende amerita un castigo o resarcimiento.</p>
+                <p>Por ende, lo que se considera o no delito cambia en el tiempo y refleja los valores legales, culturales e históricos de una sociedad determinada. En ese sentido, la mayoría de los códigos penales se abstienen de incorporar definiciones dogmáticas del delito, sino delimitarlo a partir de aquello que está permitido y aquello que no.
+
+Los delitos son materia de estudio de la Teoría del Delito, una rama del Derecho Penal que propone una jerarquía para la concepción de las conductas punibles, según la cual la reincidencia constituye un delito más grave que la primera ofensa, por ejemplo, o que la flagrancia facilita la ejecución del castigo al no haber lugar a interpretaciones de lo ocurrido.</p>
+            </div>
+            <div id="pregunta15" class="pregunta-contenido" style="display:none;">
+                <strong>Indique cuáles son las clases de delito que existen</strong>
+                <p>Existen numerosas clasificaciones para el delito, algunas de las cuales son:</p>
+<p>Según sus formas de culpabilidad:</p>
+<ul>
+    <li>
+        Delito doloso. El autor del crimen lo cometió a consciencia de lo que hacía, es decir, no fue un acto accidental, sino premeditado.
+    </li>
+    <li>
+        Delito culposo o imprudente. El delincuente no quiso cometer el crimen, pero sin embargo lo hizo debido a su imprudencia, a su complicidad o a otras condiciones atenuantes.
+    </li>
+    <li>
+        Delito preterintencional. Quien cometió el crimen aspiraba a un hecho de menor envergadura que lo ocurrido, por ejemplo, en una pelea decide golpear a su oponente y sin querer lo mata.
+    </li>
+</ul>
+Según la acción cometida:
+<li>
+    Delito por comisión. Ocurre cuando el delincuente ha cometido por mano propia el crimen, es decir, es responsable de la acción.
+</li>
+<li>
+    Delito por omisión. Ocurre cuando el crimen es consecuencia de una inacción del delincuente, es decir, de algo que no hizo o que permitió que ocurriera.
+</li>
+
+<p>Puede ser de dos tipos, a su vez:</p>
+<ul>
+    <li>
+    Por omisión propia. Cualquier delito consecuencia de omitir la norma a la que se está obligado por el código penal.
+    </li>
+    <li>
+        Por omisión impropia. Cualquier delito consecuencia de una omisión no contemplada en el código penal.
+        Según el delincuente:
+    </li>
+    
+    <li>
+        Delito especial. Lo podría haber cometido sólo alguien en una posición privilegiada, particular o de importancia.
+    </li>
+    <li>
+        Delito común. Lo podría haber cometido cualquier ciudadano ordinario.
+        Según el daño que causan:
+    </li>
+    <li>
+        Delito de lesión. Cuando existe un daño apreciable a la persona o sus bienes jurídicos.
+    </li>
+    <li>
+        Delito de peligro. Cuando se expuso a un daño posible a una persona o bien jurídico, incluso si no se sufrió el daño.
+    </li>
+    <li>
+        Delito de resultado. Requiere de que una conducta se lleve a cabo y tenga resultados.
+    </li>
+</ul>
+            </div>
+            <div id="pregunta16" class="pregunta-contenido" style="display:none;">
+                <strong>Indique cuál es el bien jurídico tutelado de los delitos informáticos</strong>
+                <p>El bien jurídico tutelado en los delitos informáticos es principalmente la seguridad y confidencialidad de los sistemas, redes y datos informáticos, así como los derechos fundamentales de las personas que puedan verse afectados por el uso indebido de las tecnologías de la información.
+
+Según el tipo de delito informático, los bienes jurídicos pueden incluir:
+La integridad, disponibilidad y confidencialidad de la información:
+
+Se protege el contenido de los datos almacenados o transmitidos digitalmente contra accesos no autorizados, alteraciones o destrucción.
+
+Ejemplo: acceso ilícito a sistemas, alteración de datos, daño a sistemas informáticos.
+
+La privacidad de las personas:
+
+Se resguarda la información personal y sensible frente a su uso indebido.
+
+Ejemplo: suplantación de identidad, interceptación de comunicaciones, espionaje informático.
+
+La propiedad intelectual y el patrimonio económico:
+
+Se protege el derecho de los autores sobre sus obras digitales y los activos económicos afectados por delitos informáticos.
+
+Ejemplo: piratería de software, fraude electrónico, phishing.
+
+La fe pública y la confianza en el uso de medios electrónicos:
+
+Se resguarda la validez y autenticidad de documentos y transacciones digitales.
+
+Ejemplo: falsificación informática, uso de firmas electrónicas falsas.
+
+El bien jurídico tutelado en los delitos informáticos es la seguridad de los sistemas y la información, junto con derechos individuales como la privacidad y la propiedad, que se ven amenazados por el uso indebido de las tecnologías digitales.</p>
+            </div>
+            <div id="pregunta17" class="pregunta-contenido" style="display:none;">
+                <strong>Explique qué es el bien jurídico tutelado</strong>
+                <p>El bien jurídico tutelado es un concepto fundamental en el derecho penal que se refiere a los intereses legítimos que están protegidos por la ley penal. Este concepto es esencial para determinar si una conducta constituye un delito y, en caso afirmativo, establecer la gravedad de ese delito.
+
+La protección de los bienes jurídicos tutelados es vital para mantener la armonía y la estabilidad en una sociedad civilizada. Es por eso que la ley penal establece sanciones para aquellos que violan los derechos de los demás.</p>
+<strong>¿Qué son los bienes jurídicos tutelados?</strong>
+<p>Son los intereses legítimos que son protegidos por el derecho penal. Estos intereses pueden variar ampliamente, según el delito en cuestión. Algunos ejemplos comunes de bienes jurídicos tutelados son la vida, la libertad, la propiedad, la integridad física y sexual, la privacidad y la seguridad vial.
+    
+    La protección de estos bienes es fundamental para garantizar la convivencia pacífica en una sociedad. Por lo tanto, la ley penal debe establecer sanciones para aquellos que infringen los derechos de los demás.
+</p>
+            </div>
+            <div id="pregunta18" class="pregunta-contenido" style="display:none;">
+                <strong>Indique cuál es la finalidad de la acción penal</strong>
+                <p>La Acción Penal es una facultad jurídica que se ejerce a través del sistema de justicia, con el objetivo de perseguir y sancionar conductas que son catalogadas como delitos según el marco legal. Esta acción se dirige fundamentalmente a la aplicación de las correspondientes penas o medidas de seguridad que determina la ley para dichas conductas.</p>
+                <p>Objetivo de la Acción Penal
+El objetivo principal de la Acción Penal es la protección de los derechos de los ciudadanos y el mantenimiento del orden público. Este mecanismo permite que, en caso de que se haya cometido un delito, se inicie un proceso que pueda llevar al enjuiciamiento y eventual sanción del culpable.
+
+<strong>Características de la accion penal</strong>
+Imparcialidad: Esto implica que una vez iniciada la acción penal, se sigue hasta las últimas consecuencias, sin tomar en cuenta las características personales del individuo.
+Legalidad: La acción penal solo puede iniciarse por conductas que la ley haya designado previamente como delitos. No puede perseguirse un acto que no esté tipificado como delito en la ley.
+Derecho subjetivo: Este mecanismo constituye un derecho subjetivo, pues cualquier persona que haya sido afectada por un delito puede iniciar una acción penal.
+Etapas de la Acción Penal
+La Acción Penal es un componente esencial del sistema legal que permite la sanción de los delitos. Este proceso se lleva a cabo a lo largo de varias etapas clave, cada una con una serie de elementos específicos y reglamentaciones que deben observarse.</p>
+            </div>
+            <div id="pregunta19" class="pregunta-contenido" style="display:none;">
+                <strong>Indique cuál es la finalidad de la acción civil</strong>
+                <p>Una acción civil es cuando una persona o un ente judicial interponen una demanda para que un juez se haga cargo de la resolución de la misma. Este conflicto debe haber pasado por algunos filtros administrativos antes de llegar a estas instancias.
+
+Es importante tener en cuenta que la acción civil, como su nombre lo indica, tan solo trata temas de índole civil, apegados a los derechos civiles de cada región y bajo el marco legal constitucional. Además, se debe considerar que estas demandan civiles son consideradas un derecho.</p>
+<strong> 
+    ¿Qué es una acción civil?
+</strong> 
+Conocer que es una acción civil es bastante sencillo. Tal como su concepto nos indica, se trata de aquella acción que posibilita la acción judicial ante el reclamo de un derecho. Este acto supone un derecho fundamental, el cual es el acceso a los tribunales civiles que tiene un ciudadano, y realizar un proceso civil mediante una demanda ante un juez.
+
+Más técnicamente, la acción civil nos indica el derecho de acceso a la jurisdicción, el cual debe venir reconocido dentro de cada constitución. A este derecho solo se puede tener acceso siempre que se pueda corroborar la necesidad del mismo.</p>
+            </div>
+            <div id="pregunta20" class="pregunta-contenido" style="display:none;">
+                <strong>Explique qué es el derecho de trabajo</strong>
+                <p>¿Qué es el derecho al trabajo?
+El derecho al trabajo es uno de los derechos humanos esenciales, que les confiere a todos los individuos por igual la libertad de elegir y ejercer un trabajo en condiciones equitativas y satisfactorias, sin tener que sufrir discriminación de ningún tipo.
+
+También exige que todo trabajador reciba una remuneración digna por sus esfuerzos, así como la justa protección social y derecho a sindicación, del modo en que se estipule en las leyes.
+
+De este modo, el derecho al trabajo constituye un principio fundamental para regular y pactar las relaciones de producción en el mundo moderno, y combatir situaciones de opresión y segregación laboral, como la esclavitud de cualquier tipo, el trabajo indigno o precario, y la discriminación laboral por raza, sexo o cualquier otro motivo.
+
+<p>
+    <strong>
+        Básicamente, se trata del derecho fundamental a ganarse la vida de manera honrada y a disfrutar de:
+    </strong>
+</p>
+
+Representación gremial o sindical ante los poderes públicos y privados.
+Vacaciones pagas y seguridad social: permisos de maternidad y paternidad, baja por enfermedad e invalidez, etc.
+Oportunidades de crecimiento y mejoría conforme a sus esfuerzos.
+El derecho al trabajo se encuentra consagrado, al igual que otros derechos humanos fundamentales, en numerosas legislaciones nacionales. Por ejemplo, el artículo 123 de la Constitución Mexicana reza: “toda persona tiene derecho al trabajo digno y socialmente útil; al efecto, se promoverán la creación de empleos y la organización social del trabajo, conforme a la ley”.
+
+Lo mismo ocurre con los tratados internacionales en la materia, como son la Declaración Universal de los Derechos Humanos de la Organización de las Naciones Unidas, cuyo artículo 23 indica: “Toda persona tiene derecho al trabajo, a la libre elección de su trabajo, a condiciones equitativas y satisfactorias de trabajo, y a la protección contra el desempleo”.</p>
+            </div>
+            <div id="pregunta21" class="pregunta-contenido" style="display:none;">
+                <strong>Para usted futuro Ingeniero, ¿en qué le será de utilidad el derecho de trabajo?</strong>
+                <p>Pues como desde un principio nos preparamos, estudiamos o aprendemos un arte, el cual nos permita desempeñar algun labor del cual poder ganarnor la vida trabajando. 
+                    <p>El derecho en si nos da una oportunidad para poder ejercer nuestras profesion como Ingenieros.
+                    El Derecho del Trabajo será de gran utilidad en varios aspectos clave de tu mi vida profesional. Aunque no sea abogado, tener conocimientos básicos sobre esta rama del derecho me permitirá desenvolverme mejor en el entorno laboral y proteger tus intereses.
+                    </p>
+                    <p>Me ayudara a saber que prestaciones me corresponden.</p>
+                    <p>Podre saber si estoy siendo tratado de manera justa y legal por parte del empleador</p>
+                    <p>Trabajar en proyectos multidisciplinarias: poder participar en auditorías, automatización de procesos laborales o implementación de sistemas que deben cumplir con normativas laborales. Tener conocimientos legales me permitirá colaborar mejor con áreas como recursos humanos o legales.</p>
+                </p>
+            </div>
+            <div id="pregunta22" class="pregunta-contenido" style="display:none;">
+                <strong>Indique en qué norma jurídica se encuentran tipificados los delitos informáticos</strong>
+                <p>Estos delitos informáticos están tipificados en la siguiente norma jurídica:
+
+Decreto Número 58-2005 del Congreso de la República
+Nombre: Ley contra la Delincuencia Organizada
+
+Esta ley contiene un capítulo específico sobre delitos informáticos, en el cual se definen y sancionan diversas conductas ilícitas relacionadas con el uso indebido de tecnologías de la información.
+
+Principales delitos informáticos tipificados:
+Algunos de los ejemplos contemplados en la ley incluyen:
+
+        <ul>
+        <li>
+            Acceso ilícito a sistemas informáticos
+        </li> 
+        <li>
+            Daño o alteración de datos y sistemas informáticos
+        </li>
+        <li>
+            Sabotaje informático
+        </li>
+        <li>
+            Espionaje informático
+        </li>
+        <li>
+            Falsificación y uso indebido de documentos electrónicos
+        </li>
+        <li>
+            Suplantación de identidad digital
+        </li>
+        <li>
+            Interferencia en comunicaciones electrónicas
+        </li>
+        </ul>
+
+        <p>
+            Normativa complementaria:
+        </p>
+Además del Decreto 58-2005, también se pueden considerar otras leyes relacionadas, como:
+
+Código Penal de Guatemala, si se aplica en combinación con medios informáticos (por ejemplo, fraude cometido por internet).
+
+Ley para el Reconocimiento de las Comunicaciones y Firmas Electrónicas (Decreto 47-2008), en casos relacionados con la validez y uso indebido de documentos y firmas digitales.</p>
+            </div>
+            <div id="pregunta23" class="pregunta-contenido" style="display:none;">
+                <strong>Indique qué fue lo que más le llamó la atención del presente curso</strong>
+            <p>
+                Pues en realidad cuando ingrese, no paso por mi cabeza llevar un curso relacionado con los derechos, pero en cierto punto me di
+                cuenta que va ser parte fundamental si que quiere hacr tratados, como con clientes o con jefes.
+                Me dio a entender que todo lo aprendido en este curso sera valioso y creo que si lo voy a llegar a utilizar, y es mas facil 
+                llevar a cabo algo teniendo una idea o conocimientos previos.
+                Aprendi terminos como que es el derecho, el uso de leyes en la informatica, los contratos electronicos, la firma electrónico,
+                lo que lleva un contrato, hacia quienes va dirigido, s
+            </p>
             </div>
         </section>
         <section id="temas">

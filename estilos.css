@@ -62,3 +62,9 @@ img {
     width: 47%;
     float: right;
 }
+
+#menu-cuestionario button {
+    margin: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
