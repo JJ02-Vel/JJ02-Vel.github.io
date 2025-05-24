@@ -15,8 +15,8 @@
             <button onclick="mostrarSeccion('datos')">Mis Datos</button>
             <button onclick="mostrarSeccion('cuestionario')">Cuestionario</button>
             <button onclick="mostrarSeccion('temas')">Derecho Mercantil</button>
-            <button onclick="mostrarSeccion('multimedia')">Multimedia</button>
         </nav>
+        <button id="toggle-dark" style="margin-top:10px;">🌙 Modo Oscuro</button>
     </header>
     <main>
         <section id="inicio">
@@ -26,18 +26,18 @@
                 <li><strong>Mis Datos:</strong> Información personal.</li><br>
                 <li><strong>Cuestionario:</strong> Preguntas y respuestas sobre el Curso de Derecho Informático.</li><br>
                 <li><strong>Derecho Mercantil:</strong> Temas relevantes y sus subtemas.</li><br>
-                <li><strong>Multimedia:</strong> Imágenes y videos relacionados.</li><br>
             </ul>
         </section>
         <section id="datos">
             <h2>Mis Datos</h2>
             <form id="datosForm">
                 <div id="datosMostrados">
-                    <p><strong>Nombre:</strong> José Antonio Velásquez</p>
-                    <p><strong>Carrera:</strong> Derecho</p>
-                    <p><strong>Sección:</strong> A</p>
+                    <p><strong>Nombre:</strong> José Joaquin Aguilar Velásquez</p>
+                    <p><strong>Carrera:</strong> Ingeniería en Sistemas de Información y Ciencias de la Computación</p>
+                    <p><strong>Carné:</strong> 0903-23-23954</p>
+                    <p><strong>Sección:</strong> B</p>
                     <p><strong>Curso:</strong> Derecho Informático</p>
-                    <p><strong>Catedrático:</strong> Lic. Juan Pérez</p>
+                    <p><strong>Catedrático:</strong> Lic. Carlos Valentín Velásquez González</p>
                 </div>
             </form>
             <div id="datosMostrados"></div>
@@ -45,6 +45,7 @@
         <section id="cuestionario">
             <h2>Cuestionario</h2>
             <div id="menu-cuestionario">
+                <input type="text" id="buscador" placeholder="Buscar pregunta..." style="margin-bottom:10px;width:100%;padding:8px;">
                 <button onclick="mostrarPregunta('pregunta1')">1. ¿Qué es el Derecho?</button>
                 <button onclick="mostrarPregunta('pregunta2')">2. Ramas del Derecho</button>
                 <button onclick="mostrarPregunta('pregunta3')">3. ¿Qué es la Cibernética?</button>
@@ -126,7 +127,7 @@
                 de un proceso. Esto incluye etapas como la demanda, la notificación, la etapa probatoria, 
                 la audiencia y la sentencia. Además, asegura que los procedimientos sean justos y ordenados, 
                 protegiendo así los derechos de las partes involucradas.
-                Recuperado de https://www.conceptosjuridicos.com/co/derecho-procesal/</p>
+                </p>
 
                 <br> <strong>Derecho Penal</strong> <br>
                 <img src="https://cdn.goconqr.com/uploads/media/image/42305453/desktop_e106fd6f-d2a0-4a3a-9162-2583e281d018.jpg">
@@ -602,7 +603,7 @@ Lo mismo ocurre con los tratados internacionales en la materia, como son la Decl
                     </p>
                     <p>Me ayudara a saber que prestaciones me corresponden.</p>
                     <p>Podre saber si estoy siendo tratado de manera justa y legal por parte del empleador</p>
-                    <p>Trabajar en proyectos multidisciplinarias: poder participar en auditorías, automatización de procesos laborales o implementación de sistemas que deben cumplir con normativas laborales. Tener conocimientos legales me permitirá colaborar mejor con áreas como recursos humanos o legales.</p>
+                    <p>Trabajar en proyectos multidisciplinarias: poder participar en auditorías, automatización de procesos laborales o implementación de sistemas que deben cumplir con normativas laborales. Tener conocimientos legales me permitirá colaborar mejor with áreas como recursos humanos o legales.</p>
                 </p>
             </div>
             <div id="pregunta22" class="pregunta-contenido" style="display:none;">
@@ -658,53 +659,564 @@ Ley para el Reconocimiento de las Comunicaciones y Firmas Electrónicas (Decreto
                 Me dio a entender que todo lo aprendido en este curso sera valioso y creo que si lo voy a llegar a utilizar, y es mas facil 
                 llevar a cabo algo teniendo una idea o conocimientos previos.
                 Aprendi terminos como que es el derecho, el uso de leyes en la informatica, los contratos electronicos, la firma electrónico,
-                lo que lleva un contrato, hacia quienes va dirigido, s
+                lo que lleva un contrato, hacia quienes va dirigido, los datos que requiere, como nit y dpi.
+                <p>
+                    La forma en que se relaciona el curso con la carrera da a conocer que como estudiantes debemos conocer, muchos temas 
+                    que van relacionado con nuestro futuro ya que de ello dependera que tan preparados vamos a estar, que tanto podemos aportar ya sea en un trabajo o si quisieramos emprender por nuestra cuenta. Ya aprendimos lo relacionado con leyes y contratos que estan reglamentados en los distintos libros de Guatemala y que podemos dar uso en cualquier momento que lo necesitemos.
+                </p>
             </p>
             </div>
         </section>
         <section id="temas">
-            <h2>Temas a Desarrollar</h2>
-            <div class="tema">
-                <h3>1. Los títulos de crédito:</h3>
-                <ul>
-                    <li>Conceptos</li>
-                    <li>Características</li>
-                    <li>Clasificación legal</li>
-                    <li>Clasificación doctrinaria</li>
-                </ul>
-            </div>
+    <h2>Temas a Desarrollar</h2>
+    <div class="temas-grid">
+        <div class="tema">
+            <h3>1. Los títulos de crédito:</h3>
+            <ul>
+                <li>Conceptos</li>
+                <li>Características</li>
+                <li>Clasificación legal</li>
+                <li>Clasificación doctrinaria</li>
+            </ul>
+        </div>
+        <div class="tema">
+            <h3>2. El cheque:</h3>
+            <ul>
+                <li>Creación y forma</li>
+                <li>Presentación y pago</li>
+                <li>Modalidades del cheque</li>
+                <li>Clasificación doctrinaria</li>
+            </ul>
+        </div>
+        <div class="tema">
+            <h3>3. Contratos Mercantiles:</h3>
+            <ul>
+                <li>Contrato de suministro</li>
+                <li>Control de edición</li>
+            </ul>
+        </div>
+        <div class="tema">
+            <h3>4. La empresa mercantil:</h3>
+            <ul>
+                <li>Concepto</li>
+                <li>Elementos de la empresa</li>
+                <li>Signos distintivos de la empresa</li>
+                <li>Las patentes</li>
+            </ul>
+        </div>
+    </div>
+</section>
         <section id="temas">
-            <div class="tema">
-                <h3>2. El cheque:</h3>
+    <h2>Temas a Desarrollar</h2>
+    <div id="menu-temas">
+        <button onclick="mostrarTema('tema1')">1. Los títulos de crédito</button>
+        <button onclick="mostrarTema('tema2')">2. El cheque</button>
+        <button onclick="mostrarTema('tema3')">3. Contratos Mercantiles</button>
+        <button onclick="mostrarTema('tema4')">4. La empresa mercantil</button>
+    </div>
+    <div id="tema1" class="tema-contenido">
+        <strong>Los titulos de credito</strong>
+        <p>Un título de crédito es un documento que incorpora un derecho de crédito a favor de su titular, permitiendo exigir el pago de una suma de dinero o el cumplimiento de una obligación específica.</p>
+        <p>
+            <strong>¿Qué es un título de crédito?</strong>
+Un título de crédito es un documento que contiene una promesa o una orden incondicional de pagar una cantidad específica de dinero a su tenedor o beneficiario. Estos documentos son esenciales en la práctica comercial, ya que representan derechos crediticios que pueden ser transferidos entre personas. El título de crédito no solo incorpora el derecho, sino que también es necesario para su ejercicio; es decir, quien posea el título es el único que puede exigir el cumplimiento de la obligación que este representa.</p>
+<img src="https://th.bing.com/th/id/OIP.CTpDRklpTJWQ-CKm7CybJAHaEK?cb=iwc2&rs=1&pid=ImgDetMain" alt="Ejemplo de título de crédito" style="vertical-align:middle; margin-left:10px; max-width:300px;">
+
+<p>Los títulos de crédito tienen características particulares como la literalidad, autonomía y la necesidad de su posesión. La literalidad implica que el derecho contenido en el documento está limitado a lo que en él se expresa textualmente. La autonomía significa que cada tenedor del título adquiere un derecho propio e independiente de los anteriores tenedores. Finalmente, la necesidad de la posesión significa que el documento es indispensable para exigir el derecho.</p>
+        <p><strong>¿Dónde se regulan los títulos de crédito en Guatemala?
+        </strong>
+En Guatemala, los títulos de crédito están regulados principalmente en el Código de Comercio, particularmente en el Libro III, Título I. Esta normativa establece las disposiciones generales sobre su creación, emisión, endoso, transmisión y ejercicio. Además, se regulan las particularidades de cada tipo de título de crédito, como los cheques, letras de cambio y pagarés.</p>
+        <p>
+            <strong>
+                ¿Qué tipos de títulos de crédito existen?
+            </strong>
+Los títulos de crédito pueden clasificarse en varios tipos según su naturaleza y función. Los más comunes incluyen:</p>
+
+<ul>
+    <li>
+        Letras de cambio: un título por el cual una persona (girador) ordena a otra (girado) pagar una suma de dinero a un tercero (beneficiario) en una fecha determinada.
+    </li>
+    <li>
+        Pagarés: documento en el cual una persona (deudor) se compromete a pagar una suma de dinero a otra (acreedor) en una fecha determinada.
+    </li>
+    <li>
+        Cheques: orden incondicional de pago que una persona (librador) emite contra un banco (girado), para que pague una suma de dinero a la persona designada (beneficiario).
+    </li>
+    <li>
+        Bonos: títulos de crédito que representan una deuda para el emisor y una inversión para el tenedor.
+    </li>
+</ul>
+<p>
+    <strong>
+        ¿Cuáles son las características de los títulos de crédito?
+    </strong>
+    Los títulos de crédito tienen varias características esenciales que los distinguen:
+        <ul>
+            <li>
+Literalidad: el derecho contenido en el título está limitado por lo que expresamente se menciona en el documento.
+            </li>
+            <li>
+    Autonomía: cada poseedor del título tiene un derecho propio e independiente de los derechos de los anteriores tenedores.
+            </li>
+            <LI>
+    Incorporación: el derecho está incorporado en el documento; no se puede ejercer sin la posesión del título.
+            </LI>
+            <LI>
+    Legitimación: sólo quien tiene el título en su poder puede ejercer el derecho contenido en él.
+            </LI>
+            <LI>
+    
+    Circulación: los títulos de crédito pueden transferirse a terceros mediante endoso u otros mecanismos de transmisión, facilitando su circulación en el mercado.
+            </LI>
+        </ul>
+</p>
+        <strong>Clasificacion legal</strong>
+        <p>Por la ley que los rige 
+Títulos nominados y títulos innominados.  
+o Nominados: son aquellos que de manera expresa se encuentran 
+regulados en una ley o código de la materia; por ejemplo: la letra de 
+cambio, el pagaré y el cheque, las obligaciones, los certificados de 
+participación, el certificado de depósito, el bono de prenda, el 
+conocimiento de embarque, los Bonos del Ahorro Nacional. </p>
+    <p>Por la personalidad del emisor 
+Surge en razón del carácter que la ley establece para el emisor del título; puede ser público o privado. 
+o Títulos públicos: son aquellos títulos emitidos por el Gobierno Federal 
+o por alguna institución de carácter público con el aval del Gobierno 
+Federal; esto es, por personas de derecho público; por ejemplo, los 
+Bonos de Deuda Pública, los Bonos del Ahorro Nacional y los CETES 
+(Certificados de la Tesorería de la Federación).  </p>
+        <p>Por el derecho incorporado en el título 
+Según sea el tipo de derecho incorporado o que confiere todo título de 
+crédito pueden ser títulos personales o corporativos, títulos 
+obligacionales y títulos reales, representativos de mercancías. 
+o Títulos personales o corporativos: son aquellos cuyo objeto principal 
+no es un derecho de crédito, sino la facultad de atribuir a su tenedor 
+una calidad personal de miembro de una corporación. </p>
+            <p>Por su creación 
+De acuerdo a la forma que se observa para crear y emitir a los títulos de 
+crédito, estos pueden ser singulares y seriales. 
+o Títulos singulares: son los que se crean y emiten de forma individual; 
+es decir, un título por cada acto de creación. Su emisión representa 
+la totalidad de una sola obligación. Por ejemplo: la letra de cambio, 
+el pagaré y el cheque. </p>
+                <p>Por su forma de circulación 
+La doctrina, en razón de las formalidades que deben observarse en cuanto 
+a su circulación, ha clasificado a los títulos de crédito en títulos nominativos, 
+títulos a la orden y títulos al portador. 
+o Títulos nominativos: son aquellos que se expiden en favor de una 
+persona determinada. Para su trasmisión se requiere del 
+conocimiento y autorización del obligado, el cual deberá llevar un 
+registro de los títulos emitidos; para la transmisión de estos 
+documentos se necesitan tres requisitos. 
+y en el libro de registro del emisor. </p>
+<ul>
+    <li>
+        1. El endoso. 
+    </li>
+    <li>
+        2. La entrega del documento. 
+    </li>
+    <li>
+        3. La inscripción del cambio de poseedor en el libro del 
+        emisor, por lo que el emitente solo reconocerá como titular 
+        del documento a quien aparezca como tal en el título mismo 
+    </li>
+</ul>
+        <strong>Clasificaciones doctrinaria</strong>
+        <p>Clasificación Doctrinaria De Los Títulos De Crédito</p>
+<p>1.    títulos nominados o innominados o típicos y atípicos: los primeros son los que aparecen tipificados en la ley, y los segundos los creados por la costumbre.</p>
+<p>2.    Singulares y seriales: los primeros son los que se crean en forma aislada, y los segundos son los que se crean en forma masiva.</p>
+<p>3.    Principales y accesorios: los primeros valen por sí mismos, los segundos siempre están ligados a un principal. Principal es el debenture, accesorio es el cupón.</p>
+<p>
+    4.    Abstractos y causales: los primeros son los que su causa no los persigue. Los segundos están siempre ligados a la causa que les dio origen.
+</p>
+<p>
+    5.    Especulativos y de inversión: los primeros son en los cuales puede obtener una ganancia. Los segundos son los que producen una renta (intereses) al adquirente del título.
+
+</p>
+<p>
+    6.    Públicos y privados: los primeros son los que emite el poder público, y los segundos los que emiten los particulares.
+</p>
+<p>
+    7.    De pago, de participación y de representación:
+    Son títulos de pago aquellos cuyo beneficio para el tenedor es el pago de un valor dinerario.
+    Los de participación permiten intervenir en el funcionamiento de un ente colectivo.
+    Y los de representación son los que el derecho incorporado significa la propiedad sobre un bien no dinerario.
+</p>
+    Sinecesita mas informacion puede consultar este documento:
+    <p>
+        <a href="https://derechoguatemalteco.org/clasificacion-doctrinaria-de-los-titulos-de-credito/" target="_blank">
+            Clasificación doctrinaria de los títulos de crédito (derechoguatemalteco.org)
+        </a>
+    </p>
+    <p>
+        <a href="http://www.fcaenlinea.unam.mx/2006/1234/docs/unidad7" target="_blank">
+            Informacion mas completa
+        </a>
+    </p>
+    <p>
+        <a href="http://oacampusvirtual.uadec.mx/apoyo_escuelas/Derecho_Virtual/Titulos_Credito/Bloque2/PDF/pdfs/clasificacion_titulos_credito.pdf" target="_blank">
+            Clasificación de títulos de crédito (PDF - UAdeC)
+        </a>
+    </p>
+    Extraido de: https://derechoguatemalteco.org/clasificacion-doctrinaria-de-los-titulos-de-credito/
+    </div>
+    <div id="tema2" class="tema-contenido" style="display:none;">
+        <strong>El cheque</strong>
+        <strong>Creación y forma</strong>
+        <p>
+            En Guatemala, el cheque está regulado por los artículos 473 al 513 del Código de Comercio. Es un título de crédito mediante el cual una persona llamada librador ordena a una institución bancaria (librado) el pago de una suma de dinero a favor del tenedor o beneficiario.
+        </p>
+        <ul>
+            <li>
+                Denominación de "cheque" en el texto.
+            </li>
+            <li>
+                Orden incondicional de pagar una suma determinada de dinero.
+            </li>
+            <li>Nombre del librado (debe ser un banco autorizado)</li>
+            <li>Lugar de pago.</li>
+            <li>Fecha y lugar de emisión.</li>
+            <li>Firma del librador.</li>
+        </ul>
+        Sin estos elementos, el documento no tiene validez como cheque.
+        <strong>Presentación y pago</strong>
+        <p>
+            Según el <strong>Artículo 482 del Código de Comercio</strong>:
+            <ul>
+                <li>Si el cheque fue emitido y debe pagarse en el mismo lugar, debe presentarse dentro de los <strong>15 días</strong> siguientes a su emisión.</li>
+                <li>Si fue emitido en otro lugar dentro del país, el plazo es de <strong>30 días</strong>.</li>
+                <li>Si fue emitido en el extranjero, debe presentarse dentro de los <strong>60 días</strong>.</li>
+            </ul>
+            El banco debe pagar el cheque si:
+            <ul>
+                <li>Hay fondos disponibles.</li>
+                <li>La firma coincide con la registrada.</li>
+                <li>No ha habido revocación válida ni caducidad.</li>
+            </ul>
+        </p>
+
+        <strong>Modalidades del cheque en Guatemala</strong>
+        <ol>
+            <li>
+                <strong>Cheque cruzado</strong><br>
+                Lleva dos líneas paralelas en el anverso. Solo puede ser depositado en cuenta bancaria, no cobrado en efectivo. Puede ser general (a cualquier banco) o especial (a un banco específico).<br>
+                <em>Ejemplo:</em> Una empresa entrega un cheque cruzado a un proveedor. Este debe depositarlo en una cuenta bancaria; no puede cobrarlo directamente.
+            </li>
+            <li>
+                <strong>Cheque para abono en cuenta</strong><br>
+                Incluye la leyenda "para abono en cuenta". Solo puede ser abonado a la cuenta del beneficiario, nunca cobrado en efectivo.<br>
+                <em>Ejemplo:</em> Un trabajador recibe su salario mediante un cheque para abono en cuenta. Está obligado a depositarlo; no puede ir al banco a cobrarlo.
+            </li>
+            <li>
+                <strong>Cheque certificado</strong><br>
+                El banco certifica que hay fondos suficientes al momento de la emisión. Estos fondos quedan retenidos, asegurando el pago.<br>
+                <em>Ejemplo:</em> Una persona compra un terreno y paga con un cheque certificado, asegurando al vendedor que el dinero ya está reservado por el banco.
+            </li>
+            <li>
+                <strong>Cheque de caja</strong><br>
+                Emitido directamente por el banco, no por una persona natural o jurídica. Representa una garantía alta de pago.<br>
+                <em>Ejemplo:</em> Una persona necesita pagar una matrícula universitaria. El banco le emite un cheque de caja a nombre de la universidad.
+            </li>
+            <li>
+                <strong>Cheque de viajero</strong><br>
+                Emitido por entidades financieras, está destinado a viajeros. Es reembolsable en caso de pérdida y ampliamente aceptado en el extranjero.<br>
+                <em>Ejemplo:</em> Un guatemalteco que viaja a Europa compra cheques de viajero en dólares. Puede usarlos en hoteles, restaurantes y tiendas.
+            </li>
+            <li>
+                <strong>Cheque con provisión garantizada</strong><br>
+                El banco garantiza y bloquea los fondos del librador por un tiempo determinado, otorgando seguridad al beneficiario.<br>
+                <em>Ejemplo:</em> Un cliente emite un cheque con provisión garantizada para asegurar el pago de una maquinaria. El banco bloquea los fondos hasta que el cheque sea cobrado.
+            </li>
+            <li>
+                <strong>Cheque con talón</strong><br>
+                Es un cheque que viene acompañado de un talón o registro, que el librador conserva para control de sus emisiones (contabilidad personal o empresarial).<br>
+                <em>Ejemplo:</em> Una empresa emite cheques a sus proveedores y guarda los talones en un archivador, con el monto, fecha y beneficiario, para tener control financiero.
+            </li>
+        </ol>
+    </div>
+    <div id="tema3" class="tema-contenido" style="display:none;">
+        <h3>3. Contratos Mercantiles: Características y Clasificación</h3>
+        <h4>Características de los contratos mercantiles</h4>
+        <ul>
+            <li><strong>Onerosidad:</strong> Ambos contratantes buscan obtener un beneficio económico. No son contratos gratuitos o de mera liberalidad.</li>
+            <li><strong>Conmutatividad:</strong> Desde el inicio del contrato, cada parte conoce lo que recibirá y lo que debe entregar.</li>
+            <li><strong>Consensualidad:</strong> Generalmente, los contratos mercantiles se perfeccionan con el simple consentimiento, sin necesidad de escritura pública, salvo excepciones.</li>
+            <li><strong>Mutabilidad:</strong> Los términos del contrato pueden modificarse de común acuerdo, siempre que no afecten derechos irrenunciables o contravengan la ley.</li>
+            <li><strong>Autonomía de la voluntad:</strong> Las partes tienen la libertad de establecer las cláusulas contractuales que consideren necesarias, mientras no infrinjan normas de orden público.</li>
+        </ul>
+
+        <h4>Clasificación de los contratos mercantiles</h4>
+        <ul>
+            <li><strong>Por su objeto:</strong>
                 <ul>
-                    <li>Creación y forma</li>
-                    <li>Presentación y pago</li>
-                    <li>Modalidades del cheque</li>
-                    <li>Clasificación doctrinaria</li>
+                    <li>De intercambio: Compraventa, permuta, suministro.</li>
+                    <li>De servicios: Mandato mercantil, transporte.</li>
+                    <li>De utilización de cosas: Arrendamiento financiero, leasing.</li>
+                    <li>De garantía: Prenda mercantil, fideicomiso.</li>
+                    <li>De organización empresarial: Agencia, franquicia, distribución.</li>
                 </ul>
-            </div>
-        </section>
-        <section id="temas">
-            <div class="tema">
-                <h3>3. Contratos Mercantiles:</h3>
+            </li>
+            <li><strong>Por su forma:</strong>
                 <ul>
-                    <li>Contrato de suministro</li>
-                    <li>Control de edición</li>
+                    <li>Solemnes: Exigen ciertas formalidades (ej.: escritura pública).</li>
+                    <li>Consensuales: Se perfeccionan con el acuerdo de voluntades.</li>
                 </ul>
-            </div>
-        </section>
-        <section id="temas">
-            <div class="tema">
-                <h3>4. La empresa mercantil:</h3>
+            </li>
+            <li><strong>Por su duración:</strong>
                 <ul>
-                    <li>Concepto</li>
-                    <li>Elementos de la empresa</li>
-                    <li>Signos distintivos de la empresa</li>
-                    <li>Las patentes</li>
+                    <li>De ejecución instantánea: Cumplimiento inmediato (ej.: compraventa al contado).</li>
+                    <li>De tracto sucesivo: Se prolongan en el tiempo (ej.: suministro, edición).</li>
                 </ul>
-            </div>
-        </section>
+            </li>
+        </ul>
+
+        <h4>Contrato de Suministro</h4>
+        <h5>Concepto</h5>
+        <p>
+            El contrato de suministro es un acuerdo mercantil en el cual una de las partes, llamada suministrante, se obliga a entregar bienes o prestar servicios de forma continua, periódica o reiterada a otra parte, el suministrado, quien a su vez se compromete a pagar un precio por dichas prestaciones.
+        </p>
+        <p>
+            Este contrato se diferencia de la compraventa porque no se trata de una entrega única, sino de una serie de entregas sucesivas a lo largo del tiempo, ajustadas a las necesidades del suministrado.
+        </p>
+
+        <h5>Función</h5>
+        <p>
+            La función esencial del contrato de suministro es garantizar la provisión constante y regular de productos, materias primas o servicios, necesarios para la operación de un negocio o actividad económica. Es especialmente útil para empresas que dependen de insumos permanentes, como restaurantes, fábricas o clínicas.
+        </p>
+
+        <h5>Características</h5>
+        <ul>
+            <li>Ejecución periódica: Implica varias entregas, no una sola.</li>
+            <li>Continuidad: Tiene una duración temporal prolongada.</li>
+            <li>Adaptabilidad: Puede ser ajustado en función de la demanda o necesidades del suministrado.</li>
+            <li>Interdependencia: Genera una relación continua entre las partes, lo que exige confianza y cumplimiento mutuo.</li>
+        </ul>
+
+        <h5>Elementos</h5>
+        <ul>
+            <li><strong>Sujetos:</strong> Suministrante (quien entrega o presta el servicio) y suministrado (quien recibe y paga).</li>
+            <li><strong>Objeto:</strong> Bienes fungibles o servicios que se deben entregar regularmente.</li>
+            <li><strong>Precio:</strong> Puede ser fijo o variable, según cantidad, frecuencia o condiciones del mercado.</li>
+            <li><strong>Duración:</strong> Pueden estipularse plazos mensuales, anuales, o ser indefinido con posibilidad de rescisión.</li>
+        </ul>
+
+        <h5>Plazo</h5>
+        <p>
+            El contrato puede tener una duración definida (ej. 12 meses) o ser indefinido. En ambos casos, puede incluir cláusulas de prórroga automática o de revisión periódica.
+        </p>
+
+        <h5>Suspensión</h5>
+        <p>
+            La entrega o prestación puede suspenderse en casos como:
+        </p>
+        <ul>
+            <li>Incumplimiento de pago.</li>
+            <li>Causas de fuerza mayor.</li>
+            <li>Variación no autorizada de condiciones por alguna de las partes.</li>
+        </ul>
+
+        <h5>Denuncia y terminación</h5>
+        <ul>
+            <li><strong>Denuncia:</strong> Es la notificación unilateral de terminación anticipada del contrato. Debe hacerse con un preaviso razonable.</li>
+            <li><strong>Terminación:</strong> Puede ocurrir por expiración del plazo, incumplimiento grave, mutuo acuerdo o causas legales como quiebra.</li>
+        </ul>
+
+        <h4>Contrato de Edición</h4>
+        <h5>Concepto</h5>
+        <p>
+            El contrato de edición es un acuerdo mediante el cual el titular del derecho de autor (ya sea el autor de una obra o un cesionario) autoriza a un editor a reproducir, publicar y comercializar una obra intelectual, como libros, partituras, manuales, etc., en condiciones previamente pactadas.
+        </p>
+        <p>
+            Este contrato no transfiere la propiedad del derecho de autor, sino que concede el derecho de explotación editorial de la obra.
+        </p>
+
+        <h5>Características</h5>
+        <ul>
+            <li>Bilateral y oneroso: Implica obligaciones recíprocas y remuneración al titular.</li>
+            <li>Consensual pero generalmente escrito: Se recomienda formalizarlo por escrito por seguridad jurídica.</li>
+            <li>Limitado: Puede establecer restricciones de idioma, número de ejemplares, región geográfica y duración.</li>
+            <li>Protección de la obra: Debe respetar la integridad moral e intelectual del autor.</li>
+        </ul>
+
+        <h5>Elementos</h5>
+        <ul>
+            <li><strong>Partes:</strong> Titular del derecho (autor o cesionario) y editor.</li>
+            <li><strong>Objeto:</strong> Obra literaria, científica o artística original.</li>
+            <li><strong>Derechos cedidos:</strong> Reproducción, distribución, venta.</li>
+            <li><strong>Remuneración:</strong> Porcentaje sobre ventas o suma fija.</li>
+            <li><strong>Plazo y territorios:</strong> Vigencia del contrato y área geográfica donde puede distribuirse la obra.</li>
+        </ul>
+
+        <h5>Integración del derecho de autor</h5>
+        <p>
+            Según la Ley de Derecho de Autor y Derechos Conexos de Guatemala, los autores conservan derechos morales (inalienables e irrenunciables) como el derecho al nombre, a la integridad de la obra, etc., y pueden ceder los derechos patrimoniales, como el derecho de reproducción.
+        </p>
+
+        <h5>Derechos y obligaciones del titular (autor)</h5>
+        <strong>Derechos:</strong>
+        <ul>
+            <li>Recibir la remuneración acordada.</li>
+            <li>Exigir el respeto al contenido y autoría de su obra.</li>
+            <li>Revisar las pruebas antes de la publicación.</li>
+        </ul>
+        <strong>Obligaciones:</strong>
+        <ul>
+            <li>Entregar el original en condiciones adecuadas.</li>
+            <li>Garantizar que es el legítimo titular de los derechos.</li>
+        </ul>
+
+        <h5>Derechos y obligaciones del editor</h5>
+        <strong>Derechos:</strong>
+        <ul>
+            <li>Explotar comercialmente la obra según lo pactado.</li>
+            <li>Reproducir y distribuir la obra.</li>
+        </ul>
+        <strong>Obligaciones:</strong>
+        <ul>
+            <li>Respetar la integridad de la obra.</li>
+            <li>Indicar el nombre del autor en cada ejemplar.</li>
+            <li>Cumplir con el tiraje y condiciones pactadas.</li>
+            <li>Rendir cuentas y liquidar pagos conforme al contrato.</li>
+        </ul>
+    </div>
+    <div id="tema4" class="tema-contenido" style="display:none;">
+        <h3>La Empresa Mercantil</h3>
+
+        <h4>Concepto</h4>
+        <p>
+            La empresa mercantil, según el Código de Comercio de Guatemala, es una organización de bienes y trabajo que el empresario coordina para desarrollar una actividad económica de forma profesional y habitual, con fines de lucro.
+        </p>
+        <p>
+            En términos prácticos, una empresa mercantil es una unidad de producción o de servicios, organizada para realizar actos de comercio (compra-venta, servicios, industria, etc.).
+        </p>
+        <p>
+            <strong>Fundamento legal:</strong> Artículo 206 del Código de Comercio de Guatemala.
+        </p>
+
+        <h4>Elementos de la empresa</h4>
+        <ul>
+            <li>
+                <strong>Elemento personal:</strong>
+                <ul>
+                    <li>Empresario o comerciante individual.</li>
+                    <li>Trabajadores y empleados que prestan sus servicios.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Elementos materiales:</strong>
+                <ul>
+                    <li>Bienes físicos, como edificios, maquinaria, equipos, vehículos, mobiliario, etc.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Elementos inmateriales:</strong>
+                <ul>
+                    <li>Intangibles como el fondo de comercio, clientela, marcas, nombre comercial, patentes, software, etc.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Organización y dirección:</strong>
+                <ul>
+                    <li>Coordinación de todos los recursos para lograr eficiencia económica y operativa.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Actividad económica:</strong>
+                <ul>
+                    <li>Puede ser comercial, industrial, financiera, de servicios, etc.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Signos distintivos de la empresa</h4>
+        <p>
+            Los signos distintivos permiten identificar la empresa y diferenciarla de otras en el mercado. Están protegidos por la Ley de Propiedad Industrial, Decreto 57-2000.
+        </p>
+        <ol>
+            <li>
+                <strong>Nombre comercial:</strong>
+                <p>
+                    Es la denominación que identifica a una empresa como entidad. Puede coincidir o no con la razón social. Su registro protege la identidad empresarial y no caduca mientras se use.<br>
+                    <em>Ejemplo:</em> "Panadería La Esperanza", aunque la razón social sea “Inversiones Esperanza, S.A.”
+                </p>
+            </li>
+            <li>
+                <strong>Marca:</strong>
+                <p>
+                    Es cualquier signo o combinación de signos que distingue productos o servicios de una empresa frente a sus competidores. Puede ser nominativa (nombre), figurativa (logotipo), tridimensional, sonora, etc.<br>
+                    <em>Ejemplo:</em> La palabra “Pollo Campero” y su logotipo amarillo y rojo.<br>
+                    Las marcas se registran en el Registro de la Propiedad Intelectual y tienen una vigencia de 10 años renovables.
+                </p>
+            </li>
+            <li>
+                <strong>Expresiones o señales de propaganda:</strong>
+                <p>
+                    Son frases publicitarias o lemas que se usan para atraer al público. También se pueden registrar.<br>
+                    <em>Ejemplo:</em> El lema “¡Así se goza en Guatemala!” de una bebida o producto.
+                </p>
+            </li>
+        </ol>
+
+        <h4>Las patentes</h4>
+        <p>
+            Las patentes protegen las invenciones, otorgando al titular el derecho exclusivo de uso y explotación de la invención por un período determinado. Están reguladas por la Ley de Propiedad Industrial.
+        </p>
+
+        <h5>Efectos de la patente</h5>
+        <ul>
+            <li>Otorga al titular el derecho exclusivo de producir, usar, vender o licenciar la invención.</li>
+            <li>Impide que terceros usen la invención sin autorización.</li>
+            <li>La protección tiene una vigencia de 20 años contados desde la fecha de solicitud.</li>
+        </ul>
+
+        <h5>Nulidad de la patente</h5>
+        <ul>
+            <li>Fue otorgada sin cumplir con los requisitos legales (novedad, actividad inventiva, aplicación industrial).</li>
+            <li>Se demuestra que la invención ya existía o no era patentable.</li>
+            <li>La nulidad puede solicitarse judicialmente y afecta retroactivamente.</li>
+        </ul>
+
+        <h5>Caducidad de la patente</h5>
+        <ul>
+            <li>El titular no paga las tasas de mantenimiento.</li>
+            <li>El titular renuncia expresamente a la patente.</li>
+            <li>La invención no se explota dentro del plazo legal, cuando así lo exija la ley.</li>
+            <li>Una vez caducada, la invención pasa a dominio público.</li>
+        </ul>
+
+        <h5>Clases de patentes</h5>
+        <ul>
+            <li>
+                <strong>Patente de invención:</strong>
+                <ul>
+                    <li>Protege productos o procesos nuevos que impliquen actividad inventiva y tengan aplicación industrial.</li>
+                    <li><em>Ejemplo:</em> un nuevo tipo de motor ecológico.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Patente de modelo de utilidad:</strong>
+                <ul>
+                    <li>Protege mejoras funcionales de objetos ya existentes.</li>
+                    <li>Vigencia: 10 años.</li>
+                    <li><em>Ejemplo:</em> una mejora en el diseño de una herramienta de carpintería.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Diseño industrial:</strong>
+                <ul>
+                    <li>Protege la apariencia externa de un producto (forma, color, textura).</li>
+                    <li>Vigencia: 10 años renovables.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
     </main>
+    <button id="volver-arriba" style="display:none;position:fixed;bottom:30px;right:30px;z-index:1000;">↑ Arriba</button>
+    <footer style="text-align:center;padding:20px;background:#2c3e50;color:#fff;">
+    © 2025 José Joaquin Aguilar Velásquez | Derecho Informático | UMG
+</footer>
     <script src="script.js"></script>
     <script src="contenido.js"></script>
 </body>
